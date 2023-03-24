@@ -7,9 +7,7 @@ function Contact() {
 
   function sendData() {
     Email.send({
-      Host: "smtp.gmail.com",
-      Username: "shreykumar55242@gmail.com",
-      Password: "Gjmtpjama@420N",
+      SecureToken: "7de8deab-9139-4e64-b542-2f4d90e4b3ef",
       To: 'akashjaat55242@gmail.com',
       From: document.getElementById("email").value,
       Subject: "New contact",
