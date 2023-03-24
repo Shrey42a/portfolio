@@ -39,7 +39,7 @@ function Navbar() {
               </li>
               <div className="lg:hidden md:hidden flex flex-col h-max -ml-2.5">
                 <h1 className="text-center text-white font-semibold">Hello there</h1>
-                <h2 className="text-white text-center">Thanx for visit this portfolio...! <br />Hope this might be helpful...<br /> visit again.</h2>
+                <h2 className="text-white text-center">Thanx for visit this portfolio...!</h2>
               </div>
               <div className="p-1 rounded-lg flex justify-evenly h-max lg:hidden md:hidden -ml-2.5">
                 <Icons />
