@@ -65,7 +65,7 @@ function Contact() {
         <form onSubmit={handleSubmit} className="lg:h-4/5 flex flex-col py-2 lg:justify-center space-y-3 lg:space-y-2 items-center lg:w-2/5 w-full px-6 lg:py-2 h-2/3">
           <h2 className="text-gray-400 font-mono lg:text-lg uppercase">Get in touch</h2>
           <h1 className="lg:text-3xl font-mono text-gray-400">Send me a message</h1>
-          <div className="w-full space-y-2">
+          <div className="w-full space-y-4">
             <div className="flex flex-col lg:space-y-2 space-y-1 lg:h-24">
               <label htmlFor="name" className="text-gray-400 cursor-pointer">Name*</label>
               <input

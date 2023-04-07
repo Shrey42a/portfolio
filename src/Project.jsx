@@ -21,8 +21,8 @@ function Project() {
                     <h1 className="fnt2 text-xl font-bold text-zinc-800">E-Commerce</h1>
                     <p className="text-gray-900 font-semibold">This app was made in HTML,CSS and Javascript. It is very simple app to start with.</p>
                     <div className="flex space-x-2">
-                      <button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Preview</button>
-                      <button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Code</button>
+                      <button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Preview</button>
+                      <button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Code</button>
                     </div>
                   </div>
                 </div>
