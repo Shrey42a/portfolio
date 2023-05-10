@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 function Header() {
   return (
     <>
-      <div className="flex bg1 h-screen w-full justify-center lg:items-center">
+      <div className="flex bg1 max-h-max min-h-screen w-full justify-center lg:items-center">
         <div className="min-w-fit justify-center items-center flex flex-col">
           <div className="flex flex-col items-center justify-center space-y-2">
             <h1 className="font-mono text-white text-2xl lg:relative lg:right-96">Hello there, this is</h1>

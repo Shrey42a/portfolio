@@ -8,8 +8,8 @@ function Card(props) {
           <h1 className="fnt2 text-xl p3 font-thin text-emerald-700">{props.title}</h1>
           <p className="text-gray-900 font-semibold text-start">{props.para}</p>
           <div className="flex space-x-2">
-            <button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Preview</button>
-            <button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Code</button>
+            <a href={props.href} target="blank"><button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Preview</button></a>
+            <a href={props.href2} target="blank"><button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Code</button></a>
           </div>
         </div>
       </div>

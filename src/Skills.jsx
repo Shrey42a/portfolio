@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 function Skills() {
   return (
-    <div className="h-screen overflow-y-scroll lg:overflow-y-hidden w-full bg20 lg:px-8 lg:py-4 p-2">
+    <div className="min-h-screen max-h-max overflow-y-scroll lg:overflow-y-hidden w-full bg20 lg:px-8 lg:py-4 p-2">
       <div className="flex lg:space-x-1 lg:flex-row flex-col h-full py-2 px-2 lg:pt-6 w-full justify-center">
         <div className="lg:h-full glass lg:w-2/3 h-2/3 w-full lg:pt-2 flex justify-evenly flex-wrap overflow-hidden">
           <h1 className="text-zinc-700 font-bold text-lg mt-2">Skills matters</h1>
@@ -11,33 +11,33 @@ function Skills() {
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">HTML</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041980946297143326/HTML1.png" />
-              <a href="https://www.w3schools.com/html/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://www.w3schools.com/html/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">CSS</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041980946620108830/CSS1.png" />
-              <a href="https://www.w3schools.com/w3css/defaulT.asp" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://www.w3schools.com/w3css/defaulT.asp" target="blank"><button className="custom-btn btn-13">Explore</button></a>
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">JavaScript</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041980945361813595/JS.png" />
-              <a href="https://www.w3schools.com/js/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://www.w3schools.com/js/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">React</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041980945995149382/React.png" />
-              <a href="https://reactjs.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://reactjs.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">TypeScript</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041998955388608532/TS-removebg-preview.png" />
-              <a href="https://www.typescriptlang.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://www.typescriptlang.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
             </div>
 
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">Redux</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/937199046211305514/1052577341701898311/st_small_507x507-pad_600x600_f8f8f8.u4-removebg-preview.png" />
-              <a href="https://redux.js.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://redux.js.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
             </div>
           </div>
         </div>

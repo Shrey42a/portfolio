@@ -17,7 +17,7 @@ function Navbar() {
                         </div>
                         <ul className="menu-items lg:space-y-0 space-y-10">
                             <div className="-z-10">
-                                <img src="/shrey2.png" className="lg:hidden h-60 absolute -top-6 left-10 right-0 w-4/5"></img>
+                                <img src="/BGP.png" className="lg:hidden h-60 absolute -top-6 left-10 right-0 w-4/5"></img>
                             </div>
                             <li>
                                 <Link to="/" activeClass='active' smooth={true} spy={true} duration={500}>Home</Link>
