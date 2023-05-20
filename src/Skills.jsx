@@ -11,33 +11,33 @@ function Skills() {
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">HTML</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041980946297143326/HTML1.png" />
-              <a className="hidden lg:block" href="https://www.w3schools.com/html/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://www.w3schools.com/html/" target="blank"><button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">Explore</button></a>
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">CSS</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041980946620108830/CSS1.png" />
-              <a className="hidden lg:block" href="https://www.w3schools.com/w3css/defaulT.asp" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://www.w3schools.com/w3css/defaulT.asp" target="blank"><button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">Explore</button></a>
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">JavaScript</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041980945361813595/JS.png" />
-              <a className="hidden lg:block" href="https://www.w3schools.com/js/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://www.w3schools.com/js/" target="blank"><button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">Explore</button></a>
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">React</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041980945995149382/React.png" />
-              <a className="hidden lg:block" href="https://reactjs.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://reactjs.org/" target="blank"><button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">Explore</button></a>
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">TypeScript</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/1011518365459824660/1041998955388608532/TS-removebg-preview.png" />
-              <a className="hidden lg:block" href="https://www.typescriptlang.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://www.typescriptlang.org/" target="blank"><button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">Explore</button></a>
             </div>
 
             <div className="flex flex-col items-center">
               <h1 className="text-md text-gray-400 font-bold">Redux</h1>
               <img className="h-20 w-20 lg:h-36 lg:w-36 hover:scale-110" src="https://cdn.discordapp.com/attachments/937199046211305514/1052577341701898311/st_small_507x507-pad_600x600_f8f8f8.u4-removebg-preview.png" />
-              <a className="hidden lg:block" href="https://redux.js.org/" target="blank"><button className="custom-btn btn-13">Explore</button></a>
+              <a className="hidden lg:block" href="https://redux.js.org/" target="blank"><button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">Explore</button></a>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ function Skills() {
               </div>
             </ul>
             <h1 className="text-sm lg:text-2xl text-zinc-400 text-center">Want to see some work...</h1>
-            <div className="lg:flex hidden items-center justify-center"><Link title="Projects" to="project" activeClass='active' smooth={true} spy={true} duration={500}><button className="custom-btn btn-13 text-center">Projects</button></Link></div>
+            <div className="lg:flex hidden items-center justify-center"><Link title="Projects" to="project" activeClass='active' smooth={true} spy={true} duration={500}><button className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent text-center">Projects</button></Link></div>
           </div>
         </div>
       </div>

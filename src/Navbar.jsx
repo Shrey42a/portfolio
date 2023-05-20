@@ -50,7 +50,7 @@ function Navbar() {
               </div>
             </ul>
             <div className="h-60 w-52">
-              <a href=""><img className="hover:scale-105 hover:transition hover:ease-in-out mt-2 h-full w-full cursor-pointer" src="/shrey2.png" /></a>
+              <a href="/"><img className="hover:scale-105 hover:transition hover:ease-in-out mt-2 h-full w-full cursor-pointer" src="/shrey2.png" /></a>
             </div>
           </div>
         </nav>

@@ -57,49 +57,42 @@
 }
 
 .bgc {
-  background: url("https://images.pexels.com/photos/5632398/pexels-photo-5632398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background: url("/bg/ecom.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 100% 100%;
 }
 
 .bgc2 {
-  background: url("https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background: url("/bg/Todo.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 0% 10%;
 }
 
 .bgc3 {
-  background: url("https://images.pexels.com/photos/472311/pexels-photo-472311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background: url("/bg/TV.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 0% 100%;
 }
 
 .bgc4 {
-  background: url("https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background: url("/bg/todots.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 0% 100%;
 }
 
 .bgc5 {
-  background: url("https://images.pexels.com/photos/6193086/pexels-photo-6193086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background: url("/bg/Player.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
 
 .bgc6 {
-  background: url("https://images.pexels.com/photos/1154775/pexels-photo-1154775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-}
-
-.bgc7 {
-  background: url("https://images.pexels.com/photos/3400795/pexels-photo-3400795.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background: url("/bg/Weather.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -115,15 +108,6 @@
 .ph {
   height: 48%;
   width: 30%;
-}
-
-.ph:hover {
-  border: 2px solid #04ff00;
-  transition-property: box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 3);
-  transition-duration: 550ms;
-  box-shadow: 4px 4px 10px #00ffb3,
-    -5px -5px 10px #00eeff;
 }
 
 .ph2 {
@@ -146,29 +130,6 @@
 }
 
 @keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-
-  100% {
-    background-position: 500%;
-  }
-}
-
-.p3 {
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate2 3s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
-
-@keyframes animate2 {
   0% {
     background-position: -500%;
   }
