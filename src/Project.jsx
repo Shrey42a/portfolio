@@ -51,9 +51,7 @@ function Project() {
 
                 <div className="ph trs  wide bgc6 rounded-xl grayscale hover:grayscale-0"><Card href="https://42weather.netlify.app/" href2="https://github.com/Shrey42a/42weather" title="Weather" para="This app was made in React Redux. It is very simple app to start with." /></div>
 
-                <div className="ph trs  wide bgc7 rounded-xl grayscale hover:grayscale-0"><Card href="https://gro4ers.netlify.app/" href2="https://github.com/Shrey42a/42weather" title="Grocery store" para="This app was made in Reactjs. It is very simple app to start with." /></div>
-
-                
+                <div className="ph trs  wide bgc7 rounded-xl grayscale hover:grayscale-0"><Card href="https://gro4ers.netlify.app/" href2="https://github.com/Shrey42a/42weather" title="Grocery store" para="This app was made in Reactjs." /></div>
               </div>
             </div>
           </div>
