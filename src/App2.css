@@ -10,7 +10,7 @@
 
 /*scrollbar*/
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -46,7 +46,15 @@
   border: 2px solid #616161;
   box-shadow: 0 0 10px 0 #0a0a0a inset,
     0 0 10px 4px #090a0b;
-  animation: pulsate 2s ease-in-out;
+  -webkit-animation: pulsate 2s ease-in-out;
+          animation: pulsate 2s ease-in-out;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    box-shadow: 0 0 10px 0 #1a1e1f inset,
+      0 0 10px 4px #171c1a;
+  }
 }
 
 @keyframes pulsate {
@@ -97,6 +105,12 @@
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
+.bgc7 {
+  background: url("/bg/grocer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
 
 .grid-wrapper {
   display: grid;
@@ -124,9 +138,20 @@
   background: linear-gradient(90deg, #000, #fff, #000);
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: animate 3s linear infinite;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
 }
 
 @keyframes animate {

@@ -11,7 +11,7 @@ import { Element } from "react-scroll";
 function All() {
   return (
     <>
-      <div>
+      <div className="bg-white">
         <Navbar />
         <Element name="home"><Header /></Element>
         <Element name="about"><About2 /></Element>

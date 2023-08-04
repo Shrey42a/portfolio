@@ -30,7 +30,7 @@ function Project() {
             </div>
             <div className="lg:hidden h-4/5 w-full flex flex-col space-y-2 p-2 overflow-y-scroll">
               <div className="bgc shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42shop.netlify.app/" title="Ecommerce" para="Build in VScode" /></div>
-              <div className="bgc2 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todo.netlify.app/" title="Todo App" para="Build in VScode" /></div>
+              <div className="bgc2 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todo2.netlify.app/" title="Todo App" para="Build in VScode" /></div>
               <div className="bgc4 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todots.netlify.app/" title="Todo TS" para="Build in VScode" /></div>
               <div className="bgc3 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42flix.netlify.app/" title="TV" para="Build in VScode" /></div>
               <div className="bgc6 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42weather.netlify.app/" title="Weather" para="Build in VScode" /></div>
@@ -41,7 +41,7 @@ function Project() {
             <div className="hidden lg:pt-8 rounded-lg lg:flex lg:items-end h-full w-4/5">
               <div className="flex flex-wrap justify-evenly ph2 w-full">
 
-                <div className="ph trs rounded-xl grayscale hover:grayscale-0 bgc2"><Card href="https://42todo.netlify.app/" href2="https://github.com/Shrey42a/TodoApp" title="Todo App" para="This app was made in Reactjs. It is very simple app to start with." /></div>
+                <div className="ph trs rounded-xl grayscale hover:grayscale-0 bgc2"><Card href="https://42todo2.netlify.app/" href2="https://github.com/Shrey42a/TodoApp" title="Todo App" para="This app was made in Reactjs. It is very simple app to start with." /></div>
 
                 <div className="ph trs rounded-xl grayscale hover:grayscale-0 bgc3"><Card href="https://42flix.netlify.app/" href2="https://github.com/Shrey42a/TV" title="TV shows" para="This app was made in Reactjs. It is very simple app to start with." /></div>
 
@@ -51,9 +51,9 @@ function Project() {
 
                 <div className="ph trs  wide bgc6 rounded-xl grayscale hover:grayscale-0"><Card href="https://42weather.netlify.app/" href2="https://github.com/Shrey42a/42weather" title="Weather" para="This app was made in React Redux. It is very simple app to start with." /></div>
 
-                <div className="flex ph items-center justify-center">
-                  <Link to="/more" className="p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">View More</Link>
-                </div>
+                <div className="ph trs  wide bgc7 rounded-xl grayscale hover:grayscale-0"><Card href="https://gro4ers.netlify.app/" href2="https://github.com/Shrey42a/42weather" title="Grocery store" para="This app was made in Reactjs. It is very simple app to start with." /></div>
+
+                
               </div>
             </div>
           </div>

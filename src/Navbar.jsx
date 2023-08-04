@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <div>
-        <nav className="navbar p-2 lg:overflow-hidden">
+        <nav className="navbar px-4 py-4 lg:overflow-hidden">
           <div className="navbar-container container">
             <input type="checkbox" name="" id="" />
 
@@ -19,7 +19,7 @@ function Navbar() {
             </div>
             <ul className="menu-items lg:space-y-0 space-y-10">
               <div className="-z-10">
-                <img src="/shrey2.png" className="lg:hidden h-60 absolute -top-6 left-10 right-0 w-4/5"></img>
+                <img src="/shrey2.png" className="lg:hidden md:hidden h-60 absolute -top-6 left-10 right-0 w-4/5"></img>
               </div>
               <li className="z-10">
                 <Link to="home" activeClass='disable' smooth={true} spy={true} duration={500}> Home</Link>

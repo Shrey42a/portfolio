@@ -57,16 +57,12 @@
 /*Social media icons ends*/
 
 .dp {
-  background: -webkit-linear-gradient(-180deg, rgba(50, 50, 50, 0) 0, rgba(50, 50, 50, 0) 76%, rgba(0, 0, 0, 1) 84%, rgba(0, 0, 0, 1) 100%), -webkit-linear-gradient(0deg, rgba(50, 50, 50, 0) 0, rgba(50, 50, 50, 0) 73%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%), url("/sk.png");
-  background: -moz-linear-gradient(270deg, rgba(50, 50, 50, 0) 0, rgba(50, 50, 50, 0) 76%, rgba(0, 0, 0, 1) 84%, rgba(0, 0, 0, 1) 100%), -moz-linear-gradient(90deg, rgba(50, 50, 50, 0) 0, rgba(50, 50, 50, 0) 73%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%), url("/sk.png");
   background: linear-gradient(270deg, rgba(50, 50, 50, 0) 0, rgba(50, 50, 50, 0) 76%, rgba(0, 0, 0, 1) 84%, rgba(0, 0, 0, 1) 100%), linear-gradient(90deg, rgba(50, 50, 50, 0) 0, rgba(50, 50, 50, 0) 73%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%), url("/sk.png");
   background-repeat: repeat, no-repeat, no-repeat;
   background-position: 50% 50%, 50% 50%, 50% 16%;
-  -webkit-background-origin: padding-box;
   background-origin: padding-box;
   -webkit-background-clip: border-box;
   background-clip: border-box;
-  -webkit-background-size: auto auto, auto auto, contain;
   background-size: auto auto, auto auto, contain;
 }
 
@@ -80,7 +76,7 @@
 
 .fnt2 {
   font-family: 'Monoton', cursive;
-  background: -webkit-linear-gradient(45deg, #04fae5, #8739ab, #36816f 80%);
+  background: -webkit-linear-gradient(45deg, #00bd1c, #eaff00, #6500a4 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -88,7 +84,6 @@
 .bg20 {
   background: url("https://images.wallpaperscraft.com/image/single/anonymous_human_hood_185754_3840x2400.jpg");
   background-position: 50% 100%;
-  -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -155,6 +150,8 @@
 .reflected {
   display: inline-block;
   font-family: 'Fredericka the Great', cursive;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   padding: 0 1px;
 }
@@ -179,21 +176,15 @@
 
 /*background*/
 .bg1 {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(-180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%), url("/hd.png");
-  background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%), url("/hd.png");
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%), url("/hd.png");
   background-repeat: repeat, no-repeat;
   background-position: 50% 50%;
-  -webkit-background-origin: padding-box;
   background-origin: padding-box;
   -webkit-background-clip: border-box;
   background-clip: border-box;
-  -webkit-background-size: auto auto, cover;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -214,10 +205,8 @@
 
 .navbar {
   position: fixed;
-  box-shadow:  -2px 2px 5px #373737,
-       0px 0px 0px #00ff00;
   width: 100%;
-  background: rgb(0, 6, 2, 0.7);
+  background: rgb(0, 6, 2, 0.4);
   backdrop-filter: blur(4px) saturate(108%);
   -webkit-backdrop-filter: blur(4px) saturate(108%);
   border-radius: 2px;
@@ -442,4 +431,20 @@
   margin-top: -10px;
   text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
   transform: translate(0, -8);
+}
+
+.text-content {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  -webkit-backdrop-filter: blur(6px) saturate(110%);
+          backdrop-filter: blur(6px) saturate(110%);
+  position: absolute;
+  transform: translateY(55%);
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+
+.card9:hover .text-content {
+  transform: translateY(0%);
+  visibility: visible;
 }
