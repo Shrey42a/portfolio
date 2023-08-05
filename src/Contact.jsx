@@ -2,12 +2,13 @@ import React from "react";
 import Icons from "./Icons";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import swal from 'sweetalert';
 
 function Contact() {
 
   function sendData() {
     Email.send({
-      SecureToken: "d1794ffb-2ea7-4860-9c44-6b65238d10a5",
+      SecureToken: "4b4d1bc9-8d19-4d8b-b740-50ae9d7cd3ed",
       To: 'shreykumar55242@gmail.com',
       From: document.getElementById("email").value,
       Subject: "New contact",
@@ -15,7 +16,11 @@ function Contact() {
         + "<br /> Email: " + document.getElementById("email").value
         + "<br /> Message: " + document.getElementById("message").value
     }).then(
-      message => alert("Message sent succesfully")
+      message => {
+        if(message =='OK'){
+          swal("Success!", "Message sent successfully!", "success");
+        }
+      }
     );
     resetForm()
     return
@@ -117,3 +122,7 @@ function Contact() {
 
 }
 export default Contact;
+
+
+
+//"
