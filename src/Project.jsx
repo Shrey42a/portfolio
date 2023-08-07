@@ -28,13 +28,13 @@ function Project() {
                 </div>
               </div>
             </div>
-            <div className="lg:hidden h-4/5 w-full flex flex-col space-y-2 p-2 overflow-y-scroll">
-              <div className="bgc shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42shop.netlify.app/" title="Ecommerce" para="Build in VScode" /></div>
-              <div className="bgc2 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todo2.netlify.app/" title="Todo App" para="Build in VScode" /></div>
-              <div className="bgc4 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todots.netlify.app/" title="Todo TS" para="Build in VScode" /></div>
-              <div className="bgc3 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42flix.netlify.app/" title="TV" para="Build in VScode" /></div>
-              <div className="bgc6 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42weather.netlify.app/" title="Weather" para="Build in VScode" /></div>
-              <div className="bgc5 shrink-0 rounded-lg h-60 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42amp.netlify.app/" title="player" para="Build in VScode" /></div>
+            <div className="lg:hidden h-4/5 w-full flex flex-col items-center space-y-8 p-2 overflow-y-scroll">
+              <div className="bgc shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42shop.netlify.app/" title="Ecommerce" para="Build in VScode" /></div>
+              <div className="bgc2 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todo2.netlify.app/" title="Todo App" para="Build in VScode" /></div>
+              <div className="bgc4 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todots.netlify.app/" title="Todo TS" para="Build in VScode" /></div>
+              <div className="bgc3 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42flix.netlify.app/" title="TV" para="Build in VScode" /></div>
+              <div className="bgc6 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42weather.netlify.app/" title="Weather" para="Build in VScode" /></div>
+              <div className="bgc5 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42amp.netlify.app/" title="player" para="Build in VScode" /></div>
               <Link to="/more" className="p-2 px-8 text-center rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">View More</Link>
             </div>
 

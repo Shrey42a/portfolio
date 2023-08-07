@@ -44,7 +44,7 @@ function Contact() {
 
   return (
     <div className="min-h-screen max-h-max w-full lg:px-8 bg20 lg:py-4 flex flex-col justify-center items-center">
-      <div className="flex lg:space-x-2 items-center justify-center flex-col lg:flex-row w-full h-full lg:px-4 lg:py-8">
+      <div className="flex lg:space-x-2 items-center justify-center flex-col lg:flex-row md:w-4/5 w-full lg:w-full h-full lg:px-4 lg:py-8">
         <div className="flex items-center px-5 flex-col lg:py-1 space-y-4 py-4 lg:space-y-4 lg:h-4/5 lg:w-2/5 w-full h-1/3">
           <h1 className="lg:text-5xl text-3xl font-semibold text-center text-gray-400 font-mono uppercase">Contact</h1>
           <h1 className="text-gray-400 text-center font-mono">You can contact me anytime between 9am to 10am...</h1>
@@ -67,7 +67,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="lg:h-4/5 flex flex-col py-2 lg:justify-center space-y-3 lg:space-y-2 items-center lg:w-2/5 w-full px-6 lg:py-2 h-2/3">
+        <form onSubmit={handleSubmit} className="lg:h-4/5 flex flex-col py-2 lg:justify-center space-y-3 lg:space-y-2 items-center lg:w-2/5 w-full px-6 lg:px-6 lg:py-2 h-2/3">
           <h2 className="text-gray-400 font-mono lg:text-lg uppercase">Get in touch</h2>
           <h1 className="lg:text-3xl font-mono text-gray-400">Send me a message</h1>
           <div className="w-full space-y-4">
