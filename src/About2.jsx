@@ -16,8 +16,8 @@ function About2() {
               <h2 className="lg:text-2xl text-md text-emerald-600 font-bold">SHREY KUMAR</h2>
               <h1 className="lg:text-7xl text-2xl text-gray-300 font-thin tracking-wide">I'm a Web</h1>
               <h1 className="lg:text-7xl text-2xl text-emerald-600 tracking-wide font-thin">Developer</h1>
-              <p className="text-gray-300 font-thin text-sm lg:text-lg">Hello... this is Shrey graduated from Meerut college and intends to be part of the organization where i can develop my technical & management skills, knowledge and make the best use of them for the growth of organization.Download CV for more details.</p>
-              <a href="/shreycv.pdf" download="Shrey resume"><button className="mt-4 p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">Download CV</button></a>
+              <p className="text-gray-300 font-thin text-sm lg:text-lg">Hey there! I'm a MCA first year student at IGNOU, Delhi. Deeply interested in Web Development. I'm skilled in React.js and Frontend Development.<br />My projects involve creating both functional and good-looking web applications.<br />I am eager to contribute my expertise to impactful projects and collaborate with fellow professionals. Let's connect and explore opportunities in the world of technology.</p>
+              <a href="/shreyresume.pdf" download="Shrey resume"><button className="mt-4 p-2 px-8 rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">Download CV</button></a>
             </div>
           </div>
         </div>
