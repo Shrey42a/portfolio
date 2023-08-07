@@ -65,48 +65,48 @@
 }
 
 .bgc {
-  background: url("/bg/ecom.png");
+  background: url("/bg/ecommerce.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .bgc2 {
-  background: url("/bg/Todo.png");
+  background: url("/bg/todorjs.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 10%;
 }
 
 .bgc3 {
-  background: url("/bg/TV.png");
+  background: url("/bg/flix.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 100%;
 }
 
 .bgc4 {
-  background: url("/bg/todots.png");
+  background: url("/bg/todots2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 100%;
 }
 
 .bgc5 {
-  background: url("/bg/Player.png");
+  background: url("/bg/player2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
 
 .bgc6 {
-  background: url("/bg/Weather.png");
+  background: url("/bg/weather2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
 .bgc7 {
-  background: url("/bg/grocer.png");
+  background: url("/bg/grocery.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 100%;

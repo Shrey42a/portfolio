@@ -10,7 +10,7 @@ function Contact() {
     Email.send({
       SecureToken: "4b4d1bc9-8d19-4d8b-b740-50ae9d7cd3ed",
       To: 'shreykumar55242@gmail.com',
-      From: document.getElementById("email").value,
+      From: "akashjaat55242@gmail.com",
       Subject: "New contact",
       Body: "Name: " + document.getElementById("name").value
         + "<br /> Email: " + document.getElementById("email").value
