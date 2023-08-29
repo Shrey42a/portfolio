@@ -19,7 +19,7 @@ function Header() {
             <Link to="contact" activeClass="active" spy={true} smooth={true} duration={500}> <button className="custom-btn btn-13 hover:outline hover:outline-2  hover:outline-offset-4 hover:outline-rose-500">Get in touch</button></Link>
           </div>
         </div>
-        <ul className="navbar2 lg:hidden md:hidden flex space-x-4 px-2 flex-row py-3 items-center justify-center rounded-full h-max w-max">
+        <ul className="navbar2 lg:hidden md:hidden mb-6 flex space-x-4 px-2 flex-row py-3 items-center justify-center rounded-full h-max w-max">
               <li className="z-10 hover:bg-black rounded-full p-3 transition ease-in-out">
                 <Link to="home" activeclass='disable' smooth={true} spy={true} duration={500}><svg className="cursor-pointer w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" strokeWidth="0.8640000000000001"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M9 20H7C5.89543 20 5 19.1046 5 18V10.9199C5 10.336 5.25513 9.78132 5.69842 9.40136L10.6984 5.11564C11.4474 4.47366 12.5526 4.47366 13.3016 5.11564L18.3016 9.40136C18.7449 9.78132 19 10.336 19 10.9199V18C19 19.1046 18.1046 20 17 20H15M9 20V14C9 13.4477 9.44772 13 10 13H14C14.5523 13 15 13.4477 15 14V20M9 20H15" stroke="#b5b5ba" strokeLinecap="round" strokeLinejoin="round"></path></g></svg></Link>
               </li>

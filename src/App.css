@@ -205,10 +205,10 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-image: linear-gradient(to top, rgba(0, 255, 204, 0.447) , rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 255, 247, 0.136), rgb(0, 0, 0),rgba(255, 255, 255, 0.236));
   border-radius: 20%;
   border: transparent;
-  color: rgb(146, 235, 30);
+  color: #92eb1e;
   z-index: 100;
 }
 
@@ -220,10 +220,10 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-image: linear-gradient(to bottom, rgba(0, 255, 204, 0.247) , rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 255, 247, 0.136), rgb(0, 0, 0),rgba(255, 255, 255, 0.236));
   border-radius: 20%;
   border: transparent;
-  color: rgb(146, 235, 30);
+  color: #2600ff;
   z-index: 100;
 }
 

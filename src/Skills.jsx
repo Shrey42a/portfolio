@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 function Skills() {
   return (
-    <div className="flex h-screen bg20 text-gray-300 w-full items-center justify-center px-2 py-2 lg:pt-10">
+    <div className="flex h-screen bg-transparent text-gray-300 w-full items-center justify-center px-2 py-2 lg:pt-10">
   <div className="flex h-max w-full flex-col space-y-4 items-center justify-center rounded-md px-2 py-2 lg:flex-row">
     <div className="flex h-1/2 w-full flex-col justify-center items-center space-y-3 rounded-lg lg:h-4/5 lg:w-2/5 lg:space-y-4">
       <h1 className="text-2xl font-medium lg:text-4xl">
