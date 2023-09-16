@@ -15,11 +15,11 @@ function Project() {
                 <h2 className="text-sm lg:text-lg text-center text-neutral-400">Here are some of my completed projects as a beginner...</h2>
                 <h3 className="text-sm text-center text-neutral-300">These projects are build in VScode some in replit.</h3>
               </div>
-              <div className=" p-2 lg:block hidden h-3/4">
+              <div className="p-2 lg:block hidden h-3/4">
                 <div className=" rounded-lg grayscale hover:grayscale-0 hover:ease-in-out flex flex-col items-start space-y-2 p-2 justify-end bgc h-full w-full outline outline-offset-2 outline-2 outline-orange-600">
                   <div className="flex flex-col items-start space-y-2 justify-end p-2 glass">
-                    <h1 className="text-xl text-zinc-800">E-Commerce</h1>
-                    <p className="text-gray-900 font-semibold">This app was made in Reactjs. It is very simple app to start with.</p>
+                    <h1 className="text-xl text-zinc-100">E-Commerce</h1>
+                    <p className="text-gray-100 font-semibold">This app was made in Reactjs. It is very simple app to start with.</p>
                     <div className="flex space-x-2">
                       <a href="https://42shop.netlify.app/" target="blank"><button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Preview</button></a>
                       <a href="https://github.com/Shrey42a/E-commerce" target="blank"><button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Code</button></a>
@@ -51,7 +51,7 @@ function Project() {
 
                 <div className="ph trs  wide bgc6 rounded-xl grayscale hover:grayscale-0"><Card href="https://42weather.netlify.app/" href2="https://github.com/Shrey42a/42weather" title="Weather" para="This app was made in React Redux. It is very simple app to start with." /></div>
 
-                <div className="ph trs  wide bgc7 rounded-xl grayscale hover:grayscale-0"><Card href="https://updates--gro4ers.netlify.app/" href2="https://github.com/Shrey42a/42weather" title="Grocery store" para="This app was made in Reactjs." /></div>
+                <div className="ph trs  wide bgc7 rounded-xl grayscale hover:grayscale-0"><Card href="https://updates--gro4ers.netlify.app/" href2="https://github.com/Shrey42a/Grocery/tree/Updates" title="Grocery store" para="This app was made in Reactjs." /></div>
               </div>
             </div>
           </div>

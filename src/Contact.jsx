@@ -58,7 +58,7 @@ function Contact() {
               <a className="wrapper2" href="https://twitter.com/@ShreyKr42" target="_blank" title="Shrey.tw">
                 <i className="fa fa-3x fa-twitter-square"></i>
               </a>
-              <a className="wrapper3" href="https://instagram.com/akku_429?igshid=YmMyMTA2M2Y=" title="Akku42n" target="_blank">
+              <a className="wrapper3" href="https://github.com/Shrey42a" title="Akku42n" target="_blank">
                 <i className="fa fa-3x fa-github-square"></i>
               </a>
               <a className="wrapper4" href="https://linkedin.com/in/shrey-kumar-090914242" target="_blank" title="Shrey.In">
