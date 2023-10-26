@@ -49,7 +49,7 @@ function Contact() {
           <h1 className="lg:text-5xl text-3xl font-semibold text-center text-gray-400 font-mono uppercase">Contact</h1>
           <h1 className="text-gray-400 text-center font-mono">You can contact me anytime between 9am to 10am...</h1>
           <h2 className="font-mono text-center text-gray-400">Call me at <span className="text-blue-400 cursor-pointer font-mono">+91 8979993542</span></h2>
-          <h2 className="font-mono text-gray-400 text-center">You can move to<span className="text-blue-400 cursor-pointer"> FAQs</span> or <span className="text-blue-400 cursor-pointer">Support</span> page to get more information about our site.</h2>
+          <h2 className="font-mono  text-gray-400 text-center">You can move to<span className="text-blue-400 cursor-pointer"> FAQs</span> or <span className="text-blue-400 cursor-pointer">Support</span> page to get more information about our site.</h2>
           <div className="bg-white/10 rounded-lg space-x-6 lg:flex flex-row items-center justify-evenly hidden p-2 mt-6">
             <div className="flex space-x-6">
               <a className="wrapper" href="https://facebook.com/Akku.athlete" target="_blank" title="Shrey.fb">
