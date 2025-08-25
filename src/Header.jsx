@@ -16,7 +16,7 @@ function Header() {
             <div className="flex flex-col lg:flex-row md:flex-row justify-center lg:space-x-2 items-center space-y-2 md:w-1/2 w-4/5 lg:w-1/2">
             <h1 className="text-center lg:text-start text-2xl text-amber-200 font-medium">I do</h1>
              <RotatingText 
-                texts={['Web-Development', 'SEO', 'Design', 'Backend' , 'Frontend']}
+                texts={['Web-Development', 'SEO', 'Web-Design', 'Backend' , 'Frontend']}
                 className="px-2 sm:px-2 md:px-3 glass fnt3 font-black text-xl md:text-3xl lg:text-4xl w-4/5 text-center items-center flex overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
