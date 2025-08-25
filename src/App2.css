@@ -64,54 +64,6 @@
   }
 }
 
-.bgc {
-  background: url("/bg/ecommerce.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-
-.bgc2 {
-  background: url("/bg/todorjs.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0% 10%;
-}
-
-.bgc3 {
-  background: url("/bg/flix.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-}
-
-.bgc4 {
-  background: url("/bg/todots2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-}
-
-.bgc5 {
-  background: url("/bg/player2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-}
-
-.bgc6 {
-  background: url("/bg/weather2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-}
-.bgc7 {
-  background: url("/bg/grocery.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-}
-
 .grid-wrapper {
   display: grid;
   grid-gap: 4px;
@@ -163,3 +115,26 @@
     background-position: 500%;
   }
 }
+
+.container2 {
+    text-align: center;
+    margin-top: 100px;
+  }
+.text2 {
+    display: inline-block;
+    font-size: '36px';
+    font-weight: 'bold';
+    color: '#007bff';
+    transition: 'transform 1s ease, opacity 1s ease',  ;
+    -webkit-transition: 'transform 1s ease, opacity 1s ease',  ;
+    -moz-transition: 'transform 1s ease, opacity 1s ease',  ;
+    -ms-transition: 'transform 1s ease, opacity 1s ease',  ;
+    -o-transition: 'transform 1s ease, opacity 1s ease',  ;
+    animation: rotate 1s ease-in-out;
+    -webkit-animation: rotate 1s ease-in-out;
+}
+   @keyframes rotate {
+    0% { transform: rotateX(0deg); opacity: 1; -webkit-transform: rotateX(0deg); -moz-transform: rotateX(0deg); -ms-transform: rotateX(0deg); -o-transform: rotateX(0deg); }
+    50% { transform: rotateX(180deg); opacity: 0; -webkit-transform: rotateX(180deg); -moz-transform: rotateX(180deg); -ms-transform: rotateX(180deg); -o-transform: rotateX(180deg); }
+    100% { transform: rotateX(360deg); opacity: 1; -webkit-transform: rotateX(360deg); -moz-transform: rotateX(360deg); -ms-transform: rotateX(360deg); -o-transform: rotateX(360deg); }
+  }

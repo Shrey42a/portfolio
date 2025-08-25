@@ -1,60 +1,32 @@
-import React from "react";
-import Card from "./Card";
-import Card2 from "./Card2";
-import { Link } from "react-router-dom";
+import Procard from "./Procard";
+import Procard2 from "./Procard2";
 
 function Project() {
+  const Paras = {
+    p1: "A feature-rich, Amazon-style shopping platform built with ReactJS, offering a seamless and dynamic user experience.Integrated Amazon-like APIs for real-time product data, pricing, and search functionality.Includes advanced features like smart product filtering, shopping cart, wishlist, and checkout flow.",
+    p2: "A sleek and intuitive task management application built with TypeScript & JavaScript for better scalability and maintainability.Features add, edit, delete, and mark-as-done functionalities with a smooth and responsive user interface.Optimized for performance, usability, and seamless productivity across all devices.",
+    p3: "An innovative ReactJS web app designed to connect blood donors with seekers in real-time.Integrated search & filter functionality for quick access to donors based on location and blood group.Built with a modern UI, responsive design, and optimized for speed and accessibility.",
+    p4: "A smart ReactJS-based medicine search platform that helps users find medicines, alternatives, and pricing instantly.Implemented real-time API integration for accurate medical data and search results.Designed with a clean, user-friendly interface for smooth navigation across all devices.",
+    p5: "A powerful ReactJS web app that enables students to explore, compare, and find the best courses easily.Includes dynamic search, filtering, and categorization features for personalized recommendations.Optimized for performance, responsiveness, and an engaging learning experience.",
+    p6: "A ReactJS-powered weather application that provides real-time weather updates for any city worldwide.Integrated live weather APIs to display temperature, humidity, wind speed, and conditions instantly.Built with a clean, responsive UI and optimized for speed, accuracy, and seamless user experience.",
+    p7: "A feature-rich searching platform clone built with ReactJS & Redux for state management and seamless performance.Integrated movie/TV show APIs to display trending content, search, and category-based browsing.",
+    p8: "A ReactJS-based Age Calculator that accurately computes age from the entered birth date.Features a clean, interactive interface and real-time calculations for instant results.",
+    p9: "A fun and interactive Tic Tac Toe game built with ReactJS for web play.Includes dynamic game board, win/tie detection, and reset functionality for engaging gameplay.",
+  }
   return (
     <>
-      <div className="overflow-y-scroll lg:overflow-hidden h-screen w-full lg:pt-2 p-3 lg:p-2 bg20 flex justify-center items-center bg-fixed">
-        <div className="flex justify-center items-center w-full h-full">
-          <div className="flex lg:flex-row flex-col h-full w-full">
-            <div className="space-y-2 lg:pt-20 items-end p-2 h-1/5 w-full lg:h-full lg:w-1/4">
-              <div className=" h-full lg:h-1/4 p-2 flex flex-col justify-center items-center">
-                <h1 className="fnt text-xl lg:text-xl text-neutral-400">My Work</h1>
-                <h2 className="text-sm lg:text-lg text-center text-neutral-400">Here are some of my completed projects as a beginner...</h2>
-                <h3 className="text-sm text-center text-neutral-300">These projects are build in VScode some in replit.</h3>
-              </div>
-              <div className="p-2 lg:block hidden h-3/4">
-                <div className=" rounded-lg grayscale hover:grayscale-0 hover:ease-in-out flex flex-col items-start space-y-2 p-2 justify-end bgc h-full w-full outline outline-offset-2 outline-2 outline-orange-600">
-                  <div className="flex flex-col items-start space-y-2 justify-end p-2 glass">
-                    <h1 className="text-xl text-zinc-100">E-Commerce</h1>
-                    <p className="text-gray-100 font-semibold">This app was made in Reactjs. It is very simple app to start with.</p>
-                    <div className="flex space-x-2">
-                      <a href="https://42shop.netlify.app/" target="blank"><button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Preview</button></a>
-                      <a href="https://github.com/Shrey42a/E-commerce" target="blank"><button className="p-2 px-4 rounded-sm border border-emerald-600 text-emerald-400 bg-transparent">Code</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg:hidden h-4/5 w-full flex flex-col items-center space-y-8 p-2 overflow-y-scroll">
-              <div className="bgc shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42shop.netlify.app/" title="Ecommerce" para="Build in VScode" /></div>
-              <div className="bgc2 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todo2.netlify.app/" title="Todo App" para="Build in VScode" /></div>
-              <div className="bgc4 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42todots.netlify.app/" title="Todo TS" para="Build in VScode" /></div>
-              <div className="bgc3 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42flix.netlify.app/" title="TV" para="Build in VScode" /></div>
-              <div className="bgc6 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42weather.netlify.app/" title="Weather" para="Build in VScode" /></div>
-              <div className="bgc5 shrink-0 rounded-lg h-72 lg:w-full md:w-3/5 w-full outline outline-offset-2 outline-1 outline-orange-600"><Card2 href="https://42amp.netlify.app/" title="player" para="Build in VScode" /></div>
-              <Link to="/more" className="p-2 px-8 text-center rounded-sm border border-emerald-600 text-emerald-600 bg-transparent">View More</Link>
-            </div>
-
-            <div className="hidden lg:pt-8 rounded-lg lg:flex lg:items-end h-full w-4/5">
-              <div className="flex flex-wrap justify-evenly ph2 w-full">
-
-                <div className="ph trs rounded-xl grayscale hover:grayscale-0 bgc2"><Card href="https://42todo2.netlify.app/" href2="https://github.com/Shrey42a/TodoApp" title="Todo App" para="This app was made in Reactjs. It is very simple app to start with." /></div>
-
-                <div className="ph trs rounded-xl grayscale hover:grayscale-0 bgc3"><Card href="https://42flix.netlify.app/" href2="https://github.com/Shrey42a/TV" title="TV shows" para="This app was made in Reactjs. It is very simple app to start with." /></div>
-
-                <div className="ph trs rounded-xl  bgc4 grayscale hover:grayscale-0"><Card href="https://42todots.netlify.app/" href2="https://github.com/Shrey42a/TodoAppTS" title="Todo TS" para="This app was made in Reactjs. It is very simple app to start with." /></div>
-
-                <div className="ph trs bgc5 rounded-xl grayscale hover:grayscale-0"><Card href="https://42amp.netlify.app/" href2="https://github.com/Shrey42a/Music-player" title="Player" para="This app was made in Reactjs. It is very simple app to start with." /></div>
-
-                <div className="ph trs  wide bgc6 rounded-xl grayscale hover:grayscale-0"><Card href="https://42weather.netlify.app/" href2="https://github.com/Shrey42a/42weather" title="Weather" para="This app was made in React Redux. It is very simple app to start with." /></div>
-
-                <div className="ph trs  wide bgc7 rounded-xl grayscale hover:grayscale-0"><Card href="https://google.com" href2="google.com" title="Grocery store" para="This app was made in Reactjs." /></div>
-              </div>
-            </div>
-          </div>
+      <div className="h-full w-full lg:pt-2 p-3 lg:p-2 bg20 flex flex-col space-y-6 justify-center items-center bg-fixed">
+        <h1 className="text-3xl font-medium">My Work</h1>
+        <div className="flex flex-wrap justify-center items-start w-full h-full gap-2">
+          <Procard2 title="Gro4ers Web App" image="/bg/gro4ers.png" alt="Gro4ers BG" href="https://groffers.netlify.app" para={Paras.p1} href2="https://github.com/Shrey42a/Grocery" />
+          <Procard title="Todo Web App" image="/bg/todo.png" alt="Todo Image BG" href="https://42todots.netlify.app" para={Paras.p2} href2="https://github.com/Shrey42a/TodoAppTS" />
+          <Procard2 title="Blood Donor Finder Web App" image="/bg/bd.png" alt="Blood Donor BG" href="https://skbdfinder.netlify.app" para={Paras.p3} href2="https://github.com/Shrey42a/Blooddonerfinder" />
+          <Procard title="Medicine Finder Web App" image="/bg/md.png" alt="Medicine BG" href="https://skmdfinder.netlify.app" para={Paras.p4} href2="https://github.com/Shrey42a/mdfinder" />
+          <Procard2 title="Course Finder Web App" image="/bg/course.png" alt="Course BG" href="https://skcoursefinder.netlify.app" para={Paras.p5} href2="https://github.com/Shrey42a/coursefinder" />
+          <Procard title="Weather Web App" image="/bg/weather.png" alt="Weather BG" href="https://42weather.netlify.app" para={Paras.p6} hre2="https://github.com/Shrey42a/42weather" />
+          <Procard2 title="Movie Flix" image="/bg/movieflix.png" alt="Movie flix BG" href="https://42flix.netlify.app" para={Paras.p7} href2="https://github.com/Shrey42a/TV" />
+          <Procard title="Age Calculator" image="/bg/age.png" alt="Age BG" href="https://42age.netlify.app" para={Paras.p8} href2="https://github.com/Shrey42a/Age" />
+          <Procard2 title="Tic Tac Toe Web Game" image="/bg/ttt.png" alt="TTT BG" href="https://xo42.netlify.app" para={Paras.p9} href2="https://github.com/Shrey42a/tictac" />
         </div>
       </div>
     </>

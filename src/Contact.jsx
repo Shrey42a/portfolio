@@ -1,56 +1,44 @@
-import React from "react";
 import Icons from "./Icons";
-import * as Yup from "yup";
-import { useFormik } from "formik";
-import swal from 'sweetalert';
+import { useForm, ValidationError } from '@formspree/react';
+import { useEffect, useState } from "react";
+import Alert from "./Alert";
 
 function Contact() {
+  const [showAlert, setShowAlert] = useState(false);
+  const [state, handleSubmit] = useForm("mdklnyey");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",  
+  });
 
-  function sendData() {
-    Email.send({
-      SecureToken: "4b4d1bc9-8d19-4d8b-b740-50ae9d7cd3ed",
-      To: 'shreykumar55242@gmail.com',
-      From: "akashjaat55242@gmail.com",
-      Subject: "New contact",
-      Body: "Name: " + document.getElementById("name").value
-        + "<br /> Email: " + document.getElementById("email").value
-        + "<br /> Message: " + document.getElementById("message").value
-    }).then(
-      message => {
-        if(message =='OK'){
-          swal("Success!", "Message sent successfully!", "success");
-        }
-      }
-    );
-    resetForm()
-    return
+  useEffect(() => {
+  if (showAlert) {
+    const timer = setTimeout(() => setShowAlert(false), 3000);
+    return () => clearTimeout(timer);
+  }
+}, [showAlert]);
+
+  function resetfrm(){
+    setFormData({
+    name: "",
+    email: "",
+    message: "",
+    })
   }
 
-  const schema = Yup.object().shape({
-    email: Yup.string().email().required(),
-    name: Yup.string().required(),
-    message: Yup.string().required(),
-  })
-
-  const { handleSubmit, handleChange, handleBlur, touched, resetForm, values, errors, isValid } = useFormik({
-    initialValues: {
-      email: "",
-      name: "",
-      message: "",
-    },
-    onSubmit: sendData,
-    validationSchema: schema,
-  })
+    const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   return (
-    <div className="min-h-screen max-h-max w-full lg:px-8 bg20 lg:py-4 flex flex-col justify-center items-center">
+    <div className="min-h-screen bg20 max-h-max w-full lg:px-8 lg:py-4 flex flex-col justify-start items-center">
       <div className="flex lg:space-x-2 items-center justify-center flex-col lg:flex-row md:w-4/5 w-full lg:w-full h-full lg:px-4 lg:py-8">
         <div className="flex items-center px-5 flex-col lg:py-1 space-y-4 py-4 lg:space-y-4 lg:h-4/5 lg:w-2/5 w-full h-1/3">
-          <h1 className="lg:text-5xl text-3xl font-semibold text-center text-gray-400 font-mono uppercase">Contact</h1>
-          <h1 className="text-gray-400 text-center font-mono">You can contact me anytime between 9am to 10am...</h1>
-          <h2 className="font-mono text-center text-gray-400">Call me at <span className="text-blue-400 cursor-pointer font-mono">+91 8979993542</span></h2>
-          <h2 className="font-mono  text-gray-400 text-center">You can move to<span className="text-blue-400 cursor-pointer"> FAQs</span> or <span className="text-blue-400 cursor-pointer">Support</span> page to get more information about our site.</h2>
-          <div className="bg-white/10 rounded-lg space-x-6 lg:flex flex-row items-center justify-evenly hidden p-2 mt-6">
+          <h1 className="lg:text-5xl text-3xl font-semibold text-center uppercase">Contact</h1>
+          <h1 className="text-center">You can contact me anytime</h1>
+          <div className="bg-white/10 rounded-lg space-x-6 lg:flex flex-row items-center justify-evenly hidden p-2 lg:mt-0 md:mt-0 mt-20">
             <div className="flex space-x-6">
               <a className="wrapper" href="https://facebook.com/Akku.athlete" target="_blank" title="Shrey.fb">
                 <i className="fa fa-3x fa-facebook-square"></i>
@@ -67,62 +55,59 @@ function Contact() {
             </div>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="lg:h-4/5 flex flex-col py-2 lg:justify-center space-y-3 lg:space-y-2 items-center lg:w-2/5 w-full px-6 lg:px-6 lg:py-2 h-2/3">
-          <h2 className="text-gray-400 font-mono lg:text-lg uppercase">Get in touch</h2>
-          <h1 className="lg:text-3xl font-mono text-gray-400">Send me a message</h1>
-          <div className="w-full space-y-4">
+        <form onSubmit={(e) => {handleSubmit(e); resetfrm(); setShowAlert(true);}} action="https://formspree.io/f/mdklnyey" method="POST" className="lg:h-4/5 flex flex-col py-2 lg:justify-center space-y-8 lg:space-y-2 items-center lg:w-2/5 w-full px-6 lg:px-6 lg:py-2 h-2/3">
+          <h1 className="lg:text-3xl hidden lg:block">Send me a message</h1>
+          <div className="w-full space-y-5">
             <div className="flex flex-col lg:space-y-2 space-y-1 h-24">
-              <label htmlFor="name" className="text-gray-400 cursor-pointer">Name*</label>
+              <label htmlFor="name" className="text-amber-200 cursor-pointer">Name*</label>
               <input
                 id="name"
                 name="name"
-                value={values.name}
-                onBlur={handleBlur}
+                required
                 onChange={handleChange}
+                value={formData.name}
                 placeholder="Your name*"
-                className="caret-lime-400 text-gray-400 accent-gray-400 w-full rounded-lg px-4 p-2 bg-white/10" />
-              {touched.name && errors.name && (<div className="ml-2 text-red-500">{errors.name}</div>)}
+                className="caret-lime-400 text-amber-200 accent-gray-400 w-full rounded-lg px-4 p-2 bg-white/10" />
+                <ValidationError className="ml-2 text-red-500" prefix="Name" field="name" errors={state.errors} />
             </div>
             <div className="flex flex-col space-y-1 h-24">
-              <label htmlFor="email" className="text-gray-400 cursor-pointer">Email*</label>
+              <label htmlFor="email" className="text-amber-200 cursor-pointer">Email*</label>
               <input
                 id="email"
                 name="email"
-                value={values.email}
-                onBlur={handleBlur}
+                required
+                type="email"
                 onChange={handleChange}
+                value={formData.email}
                 placeholder="Your email*"
-                className="caret-lime-400 text-gray-400 accent-gray-400 w-full rounded-lg px-4 p-2 bg-white/10" />
-              {touched.email && errors.email && (<div className="ml-2 text-red-500">{errors.email}</div>)}
+                className="caret-lime-400 text-amber-200 accent-gray-400 w-full rounded-lg px-4 p-2 bg-white/10" />
+              <ValidationError className="ml-2 text-red-500" prefix="Email" field="email" errors={state.errors} />
             </div>
             <div className="flex flex-col space-y-1 h-24">
-              <label htmlFor="message" className="ml-2 text-gray-400 cursor-pointer">Message*</label>
+              <label htmlFor="message" className="ml-2 text-amber-200 cursor-pointer">Message*</label>
               <textarea
                 id="message"
+                required
                 name="message"
-                value={values.message}
-                onBlur={handleBlur}
-                onChange={handleChange}
                 placeholder="Message*"
-                className="caret-lime-400 text-gray-400 accent-gray-400 w-full rounded-lg px-4 p-2 bg-white/10" />
-              {touched.message && errors.message && (<div className="ml-2 text-red-500">{errors.message}</div>)}
+                onChange={handleChange}
+                value={formData.message}
+                className="caret-lime-400 text-amber-200 accent-gray-400 w-full rounded-lg px-4 p-2 bg-white/10" />
+              <ValidationError className="ml-2 text-red-500" prefix="Message" field="message" errors={state.errors} />
             </div>
-            <div className="flex space-x-2">
-              <button disabled={!isValid} type="submit" className="disabled:bg-white/30 disabled:cursor-not-allowed custom-btn btn-13">Submit</button>
-              <button type="button" onClick={resetForm} className="custom-btn btn-13">Reset</button>
+            <div className="flex space-x-2 justify-evenly">
+              <button disabled={state.submitting} type="submit" className="disabled:bg-white/30 disabled:cursor-not-allowed custom-btn btn-13">Submit</button>
+              <button onClick={resetfrm} type="button" className="disabled:bg-white/30 disabled:cursor-not-allowed custom-btn btn-13">Reset</button>
             </div>
-            <div className="bg-white/10 rounded-lg space-x-4 flex flex-row items-center justify-evenly lg:hidden p-2 mt-10">
+            <div className="rounded-lg space-x-4 flex flex-row items-center justify-evenly lg:hidden p-2">
               <Icons />
             </div>
           </div>
         </form>
+        {showAlert && <Alert />}
       </div>
     </div>
   );
 
 }
 export default Contact;
-
-
-
-//"

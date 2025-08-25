@@ -12,7 +12,7 @@ function All() {
   return (
     <>
       <div className="bg1">
-        <Navbar />
+        <div className="fixed z-50 w-full h-max flex justify-center items-center top-1"><Navbar /></div>
         <Element name="home"><Header /></Element>
         <Element name="about"><About2 /></Element>
         <Element name="skills"><Skills /></Element>
