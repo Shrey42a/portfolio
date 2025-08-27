@@ -85,10 +85,10 @@ function Header2() {
               </div>
                 <div className="inline-flex justify-start items-start gap-6">
                   <div className="px-10 py-2 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex justify-center items-center gap-2.5">
-                    <div className="text-justify justify-start text-white text-lg font-bold tracking-wide">Hire Me</div>
+                    <Link to="contact" activeclass='active' smooth={true} spy={true} duration={500}><div className="text-justify cursor-pointer justify-start text-white text-lg font-bold tracking-wide">Hire Me</div></Link>
                   </div>
                   <div className="px-10 py-2 rounded-lg outline outline-2 outline-offset-[-2px] outline-neutral-400 flex justify-center items-center gap-2.5">
-                    <div className="text-justify justify-start text-zinc-100 text-lg font-medium tracking-wide">Download CV </div>
+                    <a href="/shreykrresume.pdf" download="Shrey resume"><div className="cursor-pointer text-justify justify-start text-zinc-100 text-lg font-medium tracking-wide">Download CV </div></a>
                   </div>
                 </div>
               </div>
