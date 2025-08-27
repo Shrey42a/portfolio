@@ -7,13 +7,21 @@ import Skills from "./Skills";
 import Project from "./Project";
 import Footer from "./Footer";
 import { Element } from "react-scroll";
+import Navbar2 from "./Navbar2";
+import Header2 from "./Header2";
+import Navbarm from "./Navbarm";
+import Services from "./Sevices";
 
 function All() {
   return (
     <>
       <div className="bg1">
-        <div className="fixed z-50 w-full h-max flex justify-center items-center top-1"><Navbar /></div>
-        <Element name="home"><Header /></Element>
+        <div className="fixed z-50 w-full h-max flex justify-center items-center top-4">
+        <Navbar2 />
+        <Navbarm />
+        </div>
+        <Element name="home"><Header2 /></Element>
+        <Element name="services"><Services /></Element>
         <Element name="about"><About2 /></Element>
         <Element name="skills"><Skills /></Element>
         <Element name="project"><Project /></Element>

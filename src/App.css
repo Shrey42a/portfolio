@@ -56,24 +56,6 @@
 
 /*Social media icons ends*/
 
-.dp {
-  background: linear-gradient(270deg, 
-  rgba(0, 0, 0, 0) 0%, 
-  rgba(0, 0, 0, 0) 96%, 
-  rgba(3, 3, 3, 0.283) 84%, 
-  rgb(0, 0, 0) 100%), 
-  linear-gradient(90deg, rgba(0, 0, 0, 0.119) 0, 
-  rgba(0, 0, 0, 0) 73%, 
-  rgba(20, 19, 19, 0) 81%, 
-  rgba(0, 0, 0, 0) 100%), url("/ak4.png");
-  background-repeat: repeat, no-repeat, no-repeat;
-  background-position: 50% 50%, 50% 50%, 50% 16%;
-  background-origin: padding-box;
-  -webkit-background-clip: border-box;
-  background-clip: border-box;
-  background-size: auto auto, auto auto, contain;
-}
-
 .active {
   padding: 4px 10px;
   backdrop-filter: blur(10px) saturate(95%);
@@ -93,17 +75,19 @@
   filter: drop-shadow(8px 8px 3px #130308);
 }
 .fnt3 {
-  color: #ecdd0b;
+  color: #f97316;
   font-family: "Bellota", system-ui;
   
 }
 
 .bg20 {
-  background: url("https://images.wallpaperscraft.com/image/single/anonymous_human_hood_185754_3840x2400.jpg");
+  background: linear-gradient(135deg, rgb(26, 15, 31), rgba(26, 15, 31, 0.918), rgb(15, 15, 15)), url("https://images.wallpaperscraft.com/image/single/anonymous_human_hood_185754_3840x2400.jpg");
   background-position: 50% 100%;
   background-size: cover;
   background-attachment: fixed;
 }
+
+/*url("https://images.wallpaperscraft.com/image/single/anonymous_human_hood_185754_3840x2400.jpg")*/
 
 /*Button*/
 .custom-btn {
@@ -198,7 +182,7 @@
   box-sizing: content-box;
   width: 100%;
   height: 100%;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0.427) 0, rgba(0, 0, 0, 1) 100%), url("/hd.png");
+  background: linear-gradient(135deg, rgb(0, 0, 0), rgba(26, 15, 31, 0.945), rgb(15, 15, 15)), url("/hd.png");
   background-repeat: repeat, no-repeat;
   background-position: 50% 50%;
   background-origin: padding-box;
@@ -224,6 +208,16 @@
   color: #92eb1e;
 }
 
+.navbar3 {
+  -webkit-backdrop-filter: blur(4px) saturate(110%);
+          backdrop-filter: blur(4px) saturate(110%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-image: linear-gradient(to bottom, rgba(247, 247, 247, 0.121), rgba(255, 255, 255, 0.121),rgba(255, 255, 255, 0.121));
+  border: transparent;
+}
+
 .navbar2 {
   position: fixed;
   bottom: 0;
@@ -232,8 +226,8 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-image: linear-gradient(to bottom, rgba(0, 255, 247, 0.136), rgb(0, 0, 0),rgba(255, 255, 255, 0.236));
-  border-radius: 20%;
+  background-image: linear-gradient(to bottom, rgba(26, 15, 31, 0.653), rgb(0, 0, 0), rgba(25, 15, 31, 0.904));
+  border-radius: 20%; 
   border: transparent;
   color: #2600ff;
   z-index: 100;
@@ -306,7 +300,7 @@
   backdrop-filter: blur(4px) saturate(95%);
   -webkit-backdrop-filter: blur(4px) saturate(95%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: #e6e6e6;
+  color: #f97316;
   position: absolute;
   transform: translateY(55%);
   transition: 0.4s;
@@ -324,12 +318,12 @@ h2 {
 }
 
 h1 {
-  color: #daca7a;
+  color: #f97316;
   font-family: "Bellota", system-ui;
 }
 
 p {
-  color: rgb(218, 202, 122);
+  color: rgb(249, 115, 22);
   font-family: "Bellota", system-ui;
   font-weight: 500;
 }
