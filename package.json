@@ -9,16 +9,16 @@
     "preview": "vite preview"
   },
   "engines": {
-  "node": "20.x",
-  "npm": "10.x"
-},
+    "node": "20.x",
+    "npm": "10.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.0.0",
+    "@vitejs/plugin-react": "^5.0.1",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "react": "^18.2.0",
@@ -44,5 +44,4 @@
     "sweetalert": "^2.1.2",
     "yup": "^1.0.2"
   }
-  
 }
